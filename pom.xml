@@ -106,7 +106,7 @@
             <configuration>
                 <appName>discord-jmusicbot</appName>
                 <processTypes>
-                    <worker>java -Dnogui=true -jar ${project.basedir}/target/JMusicBot-${project.version}.jar</worker>
+                    <worker>java -Dnogui=true -jar target/JMusicBot-${project.version}.jar</worker>
                 </processTypes>
             </configuration>
         </plugin>
