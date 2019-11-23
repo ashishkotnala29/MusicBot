@@ -15,5 +15,8 @@ jobs:
         java-version: 1.8
     - name: Build with Maven
       env:
-        HEROKU_API_KEY: ${{secrets.HEROKU_API_KEY}}
+        HEROKU_API_KEY: ${{secrets.HEROKU_API_KEY}},
+        DISCORD_BOT_TOKEN: ${{secrets.DISCORD_BOT_TOKEN}},
+        MY_DISCORD_USER_ID: ${{secrets.MY_DISCORD_USER_ID}}
       run: mvn clean heroku:deploy -DskipTests --file pom.xml
+
