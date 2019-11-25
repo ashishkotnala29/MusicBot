@@ -1,6 +1,9 @@
 name: MusicBot CI
 
-on: [push]
+on: 
+  push:
+    branches: 
+      - master
 
 jobs:
   build:
@@ -19,4 +22,3 @@ jobs:
         DISCORD_BOT_TOKEN: ${{secrets.DISCORD_BOT_TOKEN}}
         MY_DISCORD_USER_ID: ${{secrets.MY_DISCORD_USER_ID}}
       run: mvn clean heroku:deploy -DskipTests --file pom.xml
-
