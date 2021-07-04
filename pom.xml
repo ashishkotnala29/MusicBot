@@ -47,7 +47,7 @@
             <configuration>
                 <appName>discord-jmusicbot</appName>
                 <processTypes>
-                    <worker>cd target &amp;&amp; chmod +x run_jmusicbot.sh &amp;&amp; ./run_jmusicbot.sh</worker>
+                    <worker>cd target &amp;&amp; chmod +x run_jmusicbot.sh &amp;&amp; sh run_jmusicbot.sh</worker>
                 </processTypes>
             </configuration>
         </plugin>
